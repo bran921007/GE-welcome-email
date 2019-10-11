@@ -5,6 +5,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
 
+            html, body {
+                width: 100%;
+                margin:0;
+                padding: 0;
+            }
+
+            h1.email-title {
+                margin: 0 0 10px; font-size: 24px; line-height: 30px; padding: 40px 0 15px 0;
+            }
+            .email-desc {
+                margin: 0 0 10px; padding: 0 50px 9px; font-size: 16px; line-height: 30px;
+
+            }
+
+            .button-a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 16px;
+
+            }
+
+            .services-desc {
+                margin: 0;text-align: center;
+                font-size: 15px;
+            }
+
+            .faq-title {
+                padding-top: 36px; padding-bottom: 32px; text-align: center;
+            }
+            .faq-ques {
+                line-height: 30px;
+                font-size: 16px;
+                color:#F76426;
+                padding: 0 20px;
+            }
+            .faq-answer {
+                padding-left: 0;
+            }
+
+            .faq-answer-desc {
+                list-style: none;
+                color: #000;
+                font-size: 14px; line-height: 24px
+            }
+
             @media (max-width: 576px) {
 
                 body {
@@ -27,26 +72,40 @@
                 .stack-column-center {
                     text-align: center !important;
                 }
-                
 
-            }
-
-
-                .faq-ques {
-                    line-height: 30px;
-                    font-size: 16px;
-                    color:#F76426;
-                    padding: 0 20px;
+                h1.email-title {
+                    font-size: 30px;
                 }
-                .faq-answer {
-                    padding-left: 0;
+                .email-desc {
+                    font-size: 20px;
+                    margin: 0 20px 9px;
+                    padding: 0;
+
+                }
+                .button-a {
+                    font-size: 20px;
+                }
+
+                .faq-ques{
+                    font-size: 18px;
                 }
 
                 .faq-answer-desc {
-                    list-style: none;
-                    color: #000;
-                    font-size: 14px; line-height: 24px
+                    font-size: 16px;
                 }
+
+                .services-desc {
+                    font-size: 18px;
+                }
+
+                .faq-title {
+                    font-size: 20px
+                }
+                
+
+
+            }
+
 
                 
         </style>
@@ -55,7 +114,7 @@
 
     <body>
 
-            <table align="center" role="presentation" cellspacing="0" cellpadding="0" width="600" style="font-family:sans-serif; margin: auto;border: 1px solid #cccccc;" class="email-container">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" width="600" style="font-family:sans-serif; margin: auto;" class="email-container">
                 
                 <!-- EMAIL HEADER START -->
                 <tr>
@@ -69,7 +128,7 @@
                 <!-- MAIN IMAGE START -->
                 <tr>
                         <td style="background-color: #ffffff;">
-                            <img src="./images/doctor.jpg" width="600" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img">
+                            <img src="./images/doctor.jpg" height="" alt="alt_text" border="0" style="width: 100%; max-width: 600px; height: auto font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img">
                         </td>
                     </tr>
                 <!-- MAIN IMAGE END -->
@@ -81,8 +140,8 @@
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                                 <tr>
                                     <td style="padding: 20px; font-family: sans-serif; text-align: center;">
-                                        <h1 style="margin: 0 0 10px; font-size: 24px; line-height: 30px; padding: 40px 0 15px 0;">Selamat Datang Ke DoctorOnCall</h1>
-                                        <p style="margin: 0 0 10px; padding: 0 50px 9px; font-size: 16px; line-height: 30px;">Sebagai pelanggan <b>PELAN KOMBO #HARAPANTRIO</b> daripada Great Eastern Takaful yang dihargai, anda kini boleh menikmati perkhidmatan kesihatan secara <span style="color: #EE7129"> PERCUMA</span> </p>
+                                        <h1 class="email-title" >Selamat Datang Ke DoctorOnCall</h1>
+                                        <p class="email-desc">Sebagai pelanggan <b>PELAN KOMBO #HARAPANTRIO</b> daripada Great Eastern Takaful yang dihargai, anda kini boleh menikmati perkhidmatan kesihatan secara <span style="color: #EE7129"> PERCUMA</span> </p>
                                     </td>
                                 </tr>
                                 <tr>
@@ -90,8 +149,8 @@
                                         <!-- Button : BEGIN -->
                                         <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
                                             <tr>
-                                                <td class="button-td button-td-primary" style="border: 1px solid; border-radius: 3px; color: #fff; background-color: #EE7129; font-family: sans-serif;font-size: 16px; padding: 10px; margin-bottom: 40px;">
-                                                    <a class="button-a button-a-primary" href="" style="text-decoration: none;color: #fff;">Rundingan Dengan Doktor</a>
+                                                <td class="button-td button-td-primary" style="border: 1px solid; border-radius: 3px; color: #fff; background-color: #EE7129; font-family: sans-serif; padding: 10px; margin-bottom: 40px;">
+                                                    <a class="button-a button-a-primary" href="">Rundingan Dengan Doktor</a>
                                                 </td>
                                             </tr>
                                         </table>
@@ -107,16 +166,16 @@
                 <!-- LOGIN DETAIL START-->
                 <tr> 
                         <td>
-                            <table align="center" width="500" style="border: 1px solid #F76426; margin-bottom: 30px;"> 
+                            <table align="center" style="border: 1px solid #F76426; margin-bottom: 30px; width:100%;"> 
                             <tr>
                                 <td style="font-size: 16px; padding-top: 20px; padding-bottom: 26px; padding-left: 30px; line-height: 30px;"><b>Butiran log masuk anda:</b> </td>
                             </tr>
                             <tr>
-                                <td style="font-size: 16px; padding-bottom: 10px; padding-left: 30px; line-height: 30px; color: #F76426;"> Nama Pengguna: </td>
+                                <td style="font-size: 16px; padding-bottom: 10px; padding-left: 30px; line-height: 30px; color: #F76426;"> Nama Pengguna: </td><span></span>
                                 <td style="font-size: 16px; padding-bottom: 10px; line-height: 30px;"> username@domain.com</td>
                             </tr>
                             <tr> 
-                                <td style="font-size: 16px; padding-bottom: 30px; padding-left: 30px; line-height: 30px; color: #F76426;"> Kata Laluan Pengguna</td>
+                                <td style="font-size: 16px; padding-bottom: 30px; padding-left: 30px; line-height: 30px; color: #F76426;"> Kata Laluan Pengguna:</td>
                                 <td style="font-size: 16px; padding-bottom: 30px; line-height: 30px;"> 6jdf92d</td>
                             </tr>
                             </table>
@@ -130,6 +189,7 @@
                     </tr>
                     <!-- PERKHIDMATAN KAMI END -->
                     
+                    <!-- 3 columns-->
                     <tr>
                             <td style="padding: 10px; background-color: #ffffff;">
                                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
@@ -143,8 +203,8 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
-                                                        <p style="margin: 0;text-align: center;">Rundingan Doktor</p>
+                                                    <td style="font-family: sans-serif;  line-height: 20px; color:#F76426; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
+                                                        <p class="services-desc">Rundingan Doktor</p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -159,8 +219,8 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
-                                                        <p style="margin: 0;text-align: center;">E-Farmasi</p>
+                                                    <td style="font-family: sans-serif; line-height: 20px; color:#F76426; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
+                                                        <p class="services-desc">E-Farmasi</p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -175,8 +235,8 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
-                                                        <p style="margin: 0;text-align: center;">Atur Temu Janji</p>
+                                                    <td style="font-family: sans-serif; line-height: 20px; color:#F76426; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
+                                                        <p class="services-desc">Atur Temu Janji</p>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -185,7 +245,9 @@
                                     </tr>
                                 </table>
                             </td>
-                        </tr>            
+                        </tr>    
+                        
+                        <!-- 3 columns-->
 
 
                 
@@ -193,7 +255,7 @@
 
                     <!-- FAQ START-->
                     <tr>
-                            <td style="padding-top: 36px; padding-bottom: 32px; text-align: center;"> <b> Soalan Lazim</b></td>
+                            <td class="faq-title"> <b> Soalan Lazim</b></td>
                         </tr>
                     <tr>
                             <td style="background-color: #ffffff;">
@@ -215,14 +277,9 @@
                                                 <li class="faq-answer-desc">  Bergantung kepada pilihan penghantaran dan ketersediaan produk, anda mungkin boleh menerima pesanan pada hari yang sama. </li>
                                             </ul>
                                         </li>
-                                        <li class="faq-ques"> Adakah saya perlu membayar untuk rundingan DoctorOnCall?
-                                                <ul class="faq-answer">
-                                                    <li class="faq-answer-desc">  Sebagai pelanggan PELAN KOMBO #HARAPANTRIO daripada Great Eastern Takaful, rundingan anda adalah PERCUMA. Tiada pembayaran diperlukan. </li>
-                                                </ul>
-                                        </li>
                                         <li class="faq-ques"> Apakah perlu saya buat jika saya terlupa kata laluan?
                                             <ul class="faq-answer">
-                                                <li class="faq-answer-desc">  Anda boleh layari https://www.doctoroncall.com.my/patient#/signin dan klik pada ‘Lupa Kata Laluan’ untuk menukar kata laluan yang baru. </li>
+                                                <li class="faq-answer-desc">  Anda boleh layari <a href="https://www.doctoroncall.com.my/patient#/signin">https://www.doctoroncall.com.my/patient#/signin</a> dan klik pada ‘Lupa Kata Laluan’ untuk menukar kata laluan yang baru. </li>
                                             </ul>
                                         </li>
                                         <li class="faq-ques"> Bagaimana jika saya mempunyai soalan lanjut?
